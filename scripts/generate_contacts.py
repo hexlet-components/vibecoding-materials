@@ -24,7 +24,7 @@ import csv
 from pathlib import Path
 from openpyxl import Workbook
 
-OUT = Path(__file__).resolve().parent.parent / "контакты"
+OUT = Path(__file__).resolve().parent.parent / "documents" / "контакты"
 OUT.mkdir(parents=True, exist_ok=True)
 
 

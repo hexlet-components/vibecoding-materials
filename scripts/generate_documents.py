@@ -18,7 +18,7 @@ from fpdf.enums import XPos, YPos
 
 FONT = "/System/Library/Fonts/Supplemental/Arial.ttf"
 FONT_BOLD = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
-OUT = Path(__file__).resolve().parent.parent / "документы-ип"
+OUT = Path(__file__).resolve().parent.parent / "documents" / "документы-ип"
 
 
 def doc(filename, title, lines):
