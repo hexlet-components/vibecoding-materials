@@ -9,7 +9,7 @@ IMG_20260228.pdf), даты документов зашиты внутрь PDF, 
 файлов есть два настоящих дубликата под разными именами и один похожий, но
 не дубликат (счёт за тот же хостинг, но за другой месяц) — ловушка.
 
-Запуск:  .venv/bin/python generate.py
+Запуск:  .venv/bin/python scripts/generate_documents.py
 """
 
 from pathlib import Path
@@ -18,7 +18,7 @@ from fpdf.enums import XPos, YPos
 
 FONT = "/System/Library/Fonts/Supplemental/Arial.ttf"
 FONT_BOLD = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
-OUT = Path(__file__).parent / "documents"
+OUT = Path(__file__).resolve().parent.parent / "документы-ип"
 
 
 def doc(filename, title, lines):
